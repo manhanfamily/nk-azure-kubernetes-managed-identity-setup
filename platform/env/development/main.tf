@@ -49,6 +49,7 @@ module "kubernetes" {
   workload_identity_enabled = var.workload_identity_enabled
   oidc_issuer_enabled       = var.oidc_issuer_enabled
   tags                      = var.tags
+  enable_node_public_ip     = false
 
   depends_on = [
     module.resource_group_platform
