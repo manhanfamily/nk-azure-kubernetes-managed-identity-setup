@@ -23,7 +23,7 @@ module "network" {
 }
 
 module "kubernetes" {
-  source = "./.terraform/modules/kubernetes"
+  source = "./.terraform/modules/"
 
   aks_name                  = format("aks-%s", var.name)
   resource_group_name       = module.resource_group_platform.name
